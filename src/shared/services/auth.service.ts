@@ -26,7 +26,7 @@ export class AuthService {
      */
     public login(username: string = '', password: string = ''): Promise<number> {
         return new Promise((resolve, reject) => {
-            if ((username.trim() === 'admin@venturus.org.br') && (password.trim() === 'admin')) {
+            if ((username.trim() === 'test@venturus') && (password.trim() === 'tester')) {
                 this.openSession();
                 return resolve(200);
             } else {
